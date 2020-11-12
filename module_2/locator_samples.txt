@@ -1,5 +1,5 @@
 input#name
-//input[@name="username" and @id="surname"]
+//input[@name="usersurname"]
 input.form-control.third
-//input[@data_input="optional" and @id="phone"]
+//input[@data_input="optional_phone"]
 //input[contains(@class, "second")]
