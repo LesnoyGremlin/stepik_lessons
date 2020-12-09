@@ -1,0 +1,19 @@
+1606852653887	geckodriver	INFO	Listening on 127.0.0.1:51182
+1606852654903	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/8x/pwxhjl411qd7w35mv13534bw0000gr/T/rust_mozprofilePrAbNf"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1606852657566	Marionette	INFO	Listening on port 51193
+1606852657690	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://selenium1py.pythonanywhere.com/ru/, line 374: ReferenceError: oscar is not defined
+JavaScript error: http://selenium1py.pythonanywhere.com/ru/accounts/login/, line 624: ReferenceError: oscar is not defined
+JavaScript error: http://selenium1py.pythonanywhere.com/ru/accounts/login/, line 634: ReferenceError: oscar is not defined
+1606852661627	Marionette	INFO	Stopped listening on port 51193
+1606852843125	geckodriver	INFO	Listening on 127.0.0.1:51389
+1606852844141	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/8x/pwxhjl411qd7w35mv13534bw0000gr/T/rust_mozprofileQl4ZkY"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1606852846647	Marionette	INFO	Listening on port 51400
+1606852846718	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://selenium1py.pythonanywhere.com/ru/, line 374: ReferenceError: oscar is not defined
+JavaScript error: http://selenium1py.pythonanywhere.com/ru/accounts/login/, line 624: ReferenceError: oscar is not defined
+JavaScript error: http://selenium1py.pythonanywhere.com/ru/, line 435: ReferenceError: oscar is not defined
+JavaScript error: http://selenium1py.pythonanywhere.com/ru/, line 374: ReferenceError: oscar is not defined
+1606852851890	Marionette	INFO	Stopped listening on port 51400

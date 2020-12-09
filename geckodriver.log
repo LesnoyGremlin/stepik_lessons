@@ -1,0 +1,7 @@
+1606734910298	geckodriver	INFO	Listening on 127.0.0.1:62676
+1606734911311	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/8x/pwxhjl411qd7w35mv13534bw0000gr/T/rust_mozprofileuiJIrj"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1606734914058	Marionette	INFO	Listening on port 62687
+1606734914127	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://stepik.azureedge.net/static/frontend-build/vendor.js?v=1606137267, line 2472: unreachable code after return statement
+1606734937602	Marionette	INFO	Stopped listening on port 62687

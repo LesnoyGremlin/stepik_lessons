@@ -1,0 +1,14 @@
+1606736816714	geckodriver	INFO	Listening on 127.0.0.1:63231
+1606736817724	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/8x/pwxhjl411qd7w35mv13534bw0000gr/T/rust_mozprofilekSXlBU"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1606736820367	Marionette	INFO	Listening on port 63242
+1606736820424	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://selenium1py.pythonanywhere.com/ru/, line 374: ReferenceError: oscar is not defined
+1606736822385	Marionette	INFO	Stopped listening on port 63242
+1606736956152	geckodriver	INFO	Listening on 127.0.0.1:63326
+1606736956160	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "--marionette" "-foreground" "-no-remote" "-profile" "/var/folders/8x/pwxhjl411qd7w35mv13534bw0000gr/T/rust_mozprofileT5gFUe"
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1606736958917	Marionette	INFO	Listening on port 63335
+1606736958938	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: http://selenium1py.pythonanywhere.com/ru/, line 374: ReferenceError: oscar is not defined
+1606736960641	Marionette	INFO	Stopped listening on port 63335
