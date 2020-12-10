@@ -19,7 +19,7 @@ class ProductPage(BasePage):
         assert product_price == product[len(product)-1].text, "Wrong price for product was added."
 
     def product_name_link(self):
-        return self.browser.find_element(By.CSS_SELECTOR, ".product_main h1").text
+        return self.browser.find_element(*ProductPageLocators.PRODUCT_NAME).text
 
     def product_price_link(self):
-        return self.browser.find_element(By.CSS_SELECTOR, ".product_main p.price_color ").text
+        return self.browser.find_element(*ProductPageLocators.PRODUCT_PRICE).text
