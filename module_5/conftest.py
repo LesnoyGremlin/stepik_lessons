@@ -1,6 +1,7 @@
 import pytest
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
+from .pages.data_language import LANGUAGES_DICT
 
 
 def pytest_addoption(parser):
@@ -11,8 +12,8 @@ def pytest_addoption(parser):
 @pytest.fixture(scope="function")
 def browser(request):
     user_language = request.config.getoption("language")
-#    if user_language not in data_language.LANGUAGES_DICT.keys():
-#        raise pytest.UsageError("Test run should contain language for test")
+    if user_language not in LANGUAGES_DICT.keys():
+        raise pytest.UsageError("Test run should contain language for test")
     options = Options()
     options.add_experimental_option('prefs', {'intl.accept_languages': user_language})
     browser = webdriver.Chrome(options=options)
