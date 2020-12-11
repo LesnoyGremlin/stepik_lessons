@@ -9,17 +9,18 @@ class ProductPage(BasePage):
         button = self.browser.find_element(*ProductPageLocators.ADD_TO_BASKET_BTN)
         button.click()
 
-    def was_product_added_in_basket(self, product_name, product_price):
-        alerts = self.browser.find_elements(*ProductPageLocators.PRODUCT_WAS_ADDED_ALERTS)
-        assert len(alerts) > 0, "Not alerts."
-        assert LANGUAGES_DICT[self.browser.user_language] in alerts[0].text, \
-            "Not alert product was added."
-        product = self.browser.find_elements(*ProductPageLocators.PRODUCT_WAS_ADDED_ALERT)
-        assert product_name == product[0].text, "Wrong product was added."
-        assert product_price == product[len(product)-1].text, "Wrong price for product was added."
+    def check_alert_add_to_basket_name(self, expected_text_with_name):
+        alerts_list = self.browser.find_elements(*ProductPageLocators.PRODUCT_WAS_ADDED_SUCCESS_ALERT)
+        assert len(alerts_list) > 0, "Error. Not alerts about basket."
+        alerts_text = [x.text.rstrip() for x in alerts_list]
+        assert expected_text_with_name in alerts_text, "Wrong name or message about adding in basket."
 
-    def product_name_link(self):
-        return self.browser.find_element(*ProductPageLocators.PRODUCT_NAME).text
+    def check_alert_add_to_basket_price(self, expected_price):
+        alert = self.browser.find_element(*ProductPageLocators.PRODUCT_WAS_ADDED_INFO_ALERT).text
+        assert expected_price in alert, "Wrong price or message about adding in basket."
 
-    def product_price_link(self):
-        return self.browser.find_element(*ProductPageLocators.PRODUCT_PRICE).text
+    def product_name_on_page(self):
+        return self.browser.find_element(*ProductPageLocators.PRODUCT_NAME_ON_PAGE).text
+
+    def product_price_on_page(self):
+        return self.browser.find_element(*ProductPageLocators.PRODUCT_PRICE_ON_PAGE).text
