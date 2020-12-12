@@ -2,9 +2,15 @@ from .base_page import BasePage
 from selenium.webdriver.common.by import By
 from .locators import MainPageLocators
 from .login_page import LoginPage
+from .data_links import Links
 
 
 class MainPage(BasePage):
+    def __init__(self, browser, timeout=10):
+        self.browser = browser
+        self.url = Links.MAIN_PAGE_LINK
+        self.browser.implicitly_wait(timeout)
+
     def go_to_login_page(self):
         link = self.browser.find_element(*MainPageLocators.LOGIN_LINK)
         link.click()
