@@ -19,6 +19,14 @@ class ProductPage(BasePage):
         alert = self.browser.find_element(*ProductPageLocators.PRODUCT_WAS_ADDED_INFO_ALERT).text
         assert expected_price in alert, "Wrong price or message about adding in basket."
 
+    def should_not_be_success_message(self):
+        assert self.is_not_element_present(*ProductPageLocators.PRODUCT_WAS_ADDED_SUCCESS_ALERT), \
+            "Success message is presented, but should not be"
+
+    def should_disappeared_success_message(self):
+        assert self.is_disappeared(*ProductPageLocators.PRODUCT_WAS_ADDED_SUCCESS_ALERT), \
+            "Success message is presented, but should not be"
+
     def product_name_on_page(self):
         return self.browser.find_element(*ProductPageLocators.PRODUCT_NAME_ON_PAGE).text
 
