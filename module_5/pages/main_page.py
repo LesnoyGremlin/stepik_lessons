@@ -11,7 +11,6 @@ class MainPage(BasePage):
         self.url = Links.MAIN_PAGE_LINK
         self.browser.implicitly_wait(timeout)
 
-
 """
 Перенесли эти функции в класс BasePage
     def go_to_login_page(self):

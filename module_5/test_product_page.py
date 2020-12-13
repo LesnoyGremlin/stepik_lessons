@@ -1,8 +1,8 @@
 from .pages.product_page import ProductPage
+from .pages.basket_page import BasketPage
 import pytest
 from .pages.data_language import LANGUAGES_DICT
 from .pages.login_page import LoginPage
-
 
 
 @pytest.mark.parametrize('link', ["http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/?promo=offer0"])
@@ -34,6 +34,20 @@ class TestProductPage:
         # Assert
         page.check_alert_add_to_basket_name(template_name)
         page.check_alert_add_to_basket_price(product_price)
+
+    def test_guest_cant_see_product_in_basket_opened_from_product_page(self, browser, link):
+        # Arrange
+        page = ProductPage(browser, link)
+        page.open()
+
+        # Act
+        page.go_to_basket_page()
+        basket_page = BasketPage(browser)
+
+        # Assert
+        basket_page.should_not_be_product_in_basket()
+        basket_page.should_be_empty_basket_message()
+
 
     @pytest.mark.skip
     @pytest.mark.xfail
