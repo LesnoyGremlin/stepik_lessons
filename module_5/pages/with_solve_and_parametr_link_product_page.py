@@ -2,13 +2,12 @@ from .base_page import BasePage
 from selenium.webdriver.common.by import By
 from .locators import ProductPageLocators
 from .data_language import LANGUAGES_DICT
-from .data import Links
 
 
 class ProductPage(BasePage):
-    def __init__(self, browser, timeout=10):
+    def __init__(self, browser, url, timeout=10):
         self.browser = browser
-        self.url = Links.PRODUCT_PAGE_LINK
+        self.url = url
         self.browser.implicitly_wait(timeout)
 
     def add_to_basket(self):

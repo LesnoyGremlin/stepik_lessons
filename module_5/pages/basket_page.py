@@ -1,6 +1,6 @@
 from .base_page import BasePage
 from .locators import BasketPageLocators
-from .data_links import Links
+from .data import Links
 from .data_language import LANGUAGES_DICT
 
 
