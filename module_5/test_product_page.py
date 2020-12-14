@@ -37,7 +37,7 @@ class TestProductPage:
         basket_page.should_be_empty_basket_message()
 
 
-    @pytest.mark.skip
+#    @pytest.mark.skip
     @pytest.mark.xfail
     def test_guest_cant_see_success_message_after_adding_product_to_basket(self, browser):
         # Arrange
@@ -51,7 +51,7 @@ class TestProductPage:
         # Assert
         page.should_not_be_success_message()
 
-    @pytest.mark.skip
+#    @pytest.mark.skip
     def test_guest_cant_see_success_message(self, browser):
         # Arrange
         page = ProductPage(browser)
@@ -60,7 +60,7 @@ class TestProductPage:
         # Assert
         page.should_not_be_success_message()
 
-    @pytest.mark.skip
+#    @pytest.mark.skip
     @pytest.mark.xfail
     def test_message_disappeared_after_adding_product_to_basket(self, browser):
         # Arrange
@@ -95,7 +95,7 @@ class TestProductPage:
         login_page.should_be_login_page()
 
 
-@pytest.mark.user_add_product
+#@pytest.mark.user_add_product
 class TestUserAddToBasketFromProductPage:
     @pytest.fixture(scope="function", autouse=True)
     def setup(self, browser):

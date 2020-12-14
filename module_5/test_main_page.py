@@ -39,7 +39,7 @@ class TestMainPage:
         basket_page.should_be_empty_basket_message()
 
 
-@pytest.mark.login_guest
+#@pytest.mark.login_guest
 class TestLoginFromMainPage():
     def test_guest_can_go_to_login_page(self, browser):
         # Arrange
