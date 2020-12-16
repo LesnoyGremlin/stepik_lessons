@@ -1,0 +1,84 @@
+{
+  "uid" : "d1584ab2f6d2fcec",
+  "name" : "test_guest_can_go_to_login_page",
+  "fullName" : "module_5.test_main_page.TestLoginFromMainPage#test_guest_can_go_to_login_page",
+  "historyId" : "271244f740bfa33a3675b301acb4ed52",
+  "time" : {
+    "start" : 1608037306775,
+    "stop" : 1608037308615,
+    "duration" : 1840
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "browser",
+    "time" : {
+      "start" : 1608037304582,
+      "stop" : 1608037306774,
+      "duration" : 2192
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1608037308616,
+      "stop" : 1608037309110,
+      "duration" : 494
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "module_5"
+  }, {
+    "name" : "suite",
+    "value" : "test_main_page"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestLoginFromMainPage"
+  }, {
+    "name" : "host",
+    "value" : "ys.local"
+  }, {
+    "name" : "thread",
+    "value" : "40434-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "module_5.test_main_page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d1584ab2f6d2fcec.json",
+  "parameterValues" : [ ]
+}

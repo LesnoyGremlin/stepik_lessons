@@ -1,0 +1,84 @@
+{
+  "uid" : "54bdbf9e10533a9d",
+  "name" : "test_guest_cant_see_product_in_basket_opened_from_product_page",
+  "fullName" : "module_5.test_product_page.TestProductPage#test_guest_cant_see_product_in_basket_opened_from_product_page",
+  "historyId" : "6220e4d59ea3b4d9eed2df2356be19f3",
+  "time" : {
+    "start" : 1608037026710,
+    "stop" : 1608037038931,
+    "duration" : 12221
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "browser",
+    "time" : {
+      "start" : 1608037024762,
+      "stop" : 1608037026709,
+      "duration" : 1947
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1608037038932,
+      "stop" : 1608037039445,
+      "duration" : 513
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "module_5"
+  }, {
+    "name" : "suite",
+    "value" : "test_product_page"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestProductPage"
+  }, {
+    "name" : "host",
+    "value" : "ys.local"
+  }, {
+    "name" : "thread",
+    "value" : "40130-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "module_5.test_product_page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "54bdbf9e10533a9d.json",
+  "parameterValues" : [ ]
+}

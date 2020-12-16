@@ -1,0 +1,84 @@
+{
+  "uid" : "801b3204b8570dbb",
+  "name" : "test_guest_can_go_to_login_page_from_product_page",
+  "fullName" : "module_5.test_product_page.TestProductPage#test_guest_can_go_to_login_page_from_product_page",
+  "historyId" : "aff6aceb809a02cd17facb0920c4dfa1",
+  "time" : {
+    "start" : 1608037071128,
+    "stop" : 1608037072770,
+    "duration" : 1642
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "browser",
+    "time" : {
+      "start" : 1608037068914,
+      "stop" : 1608037071127,
+      "duration" : 2213
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1608037072771,
+      "stop" : 1608037073255,
+      "duration" : 484
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "module_5"
+  }, {
+    "name" : "suite",
+    "value" : "test_product_page"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestProductPage"
+  }, {
+    "name" : "host",
+    "value" : "ys.local"
+  }, {
+    "name" : "thread",
+    "value" : "40130-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "module_5.test_product_page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "801b3204b8570dbb.json",
+  "parameterValues" : [ ]
+}

@@ -95,7 +95,7 @@ class TestProductPage:
         login_page.should_be_login_page()
 
 
-#@pytest.mark.user_add_product
+# @pytest.mark.user_add_product
 class TestUserAddToBasketFromProductPage:
     @pytest.fixture(scope="function", autouse=True)
     def setup(self, browser):

@@ -1,0 +1,89 @@
+{
+  "uid" : "42ef5da340c9ab01",
+  "name" : "test_message_disappeared_after_adding_product_to_basket",
+  "fullName" : "module_5.test_product_page.TestProductPage#test_message_disappeared_after_adding_product_to_basket",
+  "historyId" : "b1c3189d6400963e937a7a94e38cea78",
+  "time" : {
+    "start" : 1608037061896,
+    "stop" : 1608037064543,
+    "duration" : 2647
+  },
+  "status" : "skipped",
+  "statusMessage" : "XFAIL\n\nselenium.common.exceptions.NoAlertPresentException: Message: no such alert\n  (Session info: chrome=87.0.4280.88)",
+  "statusTrace" : "E   selenium.common.exceptions.NoAlertPresentException: Message: no such alert\n      (Session info: chrome=87.0.4280.88)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "browser",
+    "time" : {
+      "start" : 1608037059585,
+      "stop" : 1608037061894,
+      "duration" : 2309
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1608037064593,
+      "stop" : 1608037065152,
+      "duration" : 559
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "@pytest.mark.xfail"
+  }, {
+    "name" : "parentSuite",
+    "value" : "module_5"
+  }, {
+    "name" : "suite",
+    "value" : "test_product_page"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestProductPage"
+  }, {
+    "name" : "host",
+    "value" : "ys.local"
+  }, {
+    "name" : "thread",
+    "value" : "40130-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "module_5.test_product_page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : true,
+  "retry" : true,
+  "extra" : {
+    "categories" : [ ],
+    "tags" : [ "@pytest.mark.xfail" ]
+  },
+  "source" : "42ef5da340c9ab01.json",
+  "parameterValues" : [ ]
+}

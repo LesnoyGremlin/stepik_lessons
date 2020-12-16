@@ -1,0 +1,127 @@
+{
+  "uid" : "62d4d3f50682f228",
+  "name" : "test_message_disappeared_after_adding_product_to_basket",
+  "fullName" : "module_5.test_product_page.TestProductPage#test_message_disappeared_after_adding_product_to_basket",
+  "historyId" : "b1c3189d6400963e937a7a94e38cea78",
+  "time" : {
+    "start" : 1608038976782,
+    "stop" : 1608038979641,
+    "duration" : 2859
+  },
+  "status" : "skipped",
+  "statusMessage" : "XFAIL\n\nselenium.common.exceptions.NoAlertPresentException: Message: no such alert\n  (Session info: chrome=87.0.4280.88)",
+  "statusTrace" : "E   selenium.common.exceptions.NoAlertPresentException: Message: no such alert\n      (Session info: chrome=87.0.4280.88)",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "browser",
+    "time" : {
+      "start" : 1608038974593,
+      "stop" : 1608038976781,
+      "duration" : 2188
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1608038979679,
+      "stop" : 1608038980198,
+      "duration" : 519
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "@pytest.mark.xfail"
+  }, {
+    "name" : "parentSuite",
+    "value" : "module_5"
+  }, {
+    "name" : "suite",
+    "value" : "test_product_page"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestProductPage"
+  }, {
+    "name" : "host",
+    "value" : "ys.local"
+  }, {
+    "name" : "thread",
+    "value" : "41226-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "module_5.test_product_page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "af04e8926cb422a4",
+      "status" : "skipped",
+      "statusDetails" : "XFAIL\n\nselenium.common.exceptions.NoAlertPresentException: Message: no such alert\n  (Session info: chrome=87.0.4280.88)",
+      "time" : {
+        "start" : 1608037519997,
+        "stop" : 1608037522885,
+        "duration" : 2888
+      }
+    }, {
+      "uid" : "21ac0a9a22c2e791",
+      "status" : "skipped",
+      "statusDetails" : "XFAIL\n\nselenium.common.exceptions.NoAlertPresentException: Message: no such alert\n  (Session info: chrome=87.0.4280.88)",
+      "time" : {
+        "start" : 1608037355363,
+        "stop" : 1608037357609,
+        "duration" : 2246
+      }
+    }, {
+      "uid" : "42ef5da340c9ab01",
+      "status" : "skipped",
+      "statusDetails" : "XFAIL\n\nselenium.common.exceptions.NoAlertPresentException: Message: no such alert\n  (Session info: chrome=87.0.4280.88)",
+      "time" : {
+        "start" : 1608037061896,
+        "stop" : 1608037064543,
+        "duration" : 2647
+      }
+    }, {
+      "uid" : "118b10e942c20e4a",
+      "status" : "skipped",
+      "statusDetails" : "XFAIL\n\nselenium.common.exceptions.NoAlertPresentException: Message: no such alert\n  (Session info: chrome=87.0.4280.88)",
+      "time" : {
+        "start" : 1607938567853,
+        "stop" : 1607938570563,
+        "duration" : 2710
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ "@pytest.mark.xfail" ]
+  },
+  "source" : "62d4d3f50682f228.json",
+  "parameterValues" : [ ]
+}

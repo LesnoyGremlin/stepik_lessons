@@ -1,0 +1,118 @@
+{
+  "uid" : "4d1a1e98bbe60ffe",
+  "name" : "test_guest_can_add_product_to_basket",
+  "fullName" : "module_5.test_product_page.TestProductPage#test_guest_can_add_product_to_basket",
+  "historyId" : "b287541e01552010ac2e2f51ec4d3d99",
+  "time" : {
+    "start" : 1608038935089,
+    "stop" : 1608038937918,
+    "duration" : 2829
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "browser",
+    "time" : {
+      "start" : 1608038933140,
+      "stop" : 1608038935088,
+      "duration" : 1948
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "afterStages" : [ {
+    "name" : "browser::0",
+    "time" : {
+      "start" : 1608038937919,
+      "stop" : 1608038938427,
+      "duration" : 508
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false
+  } ],
+  "labels" : [ {
+    "name" : "parentSuite",
+    "value" : "module_5"
+  }, {
+    "name" : "suite",
+    "value" : "test_product_page"
+  }, {
+    "name" : "subSuite",
+    "value" : "TestProductPage"
+  }, {
+    "name" : "host",
+    "value" : "ys.local"
+  }, {
+    "name" : "thread",
+    "value" : "41226-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "module_5.test_product_page"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "60e9bb6546805190",
+      "status" : "passed",
+      "time" : {
+        "start" : 1608037479649,
+        "stop" : 1608037482389,
+        "duration" : 2740
+      }
+    }, {
+      "uid" : "b4169ebb871b7792",
+      "status" : "passed",
+      "time" : {
+        "start" : 1608037315040,
+        "stop" : 1608037317704,
+        "duration" : 2664
+      }
+    }, {
+      "uid" : "c71603db0b427167",
+      "status" : "passed",
+      "time" : {
+        "start" : 1608037021024,
+        "stop" : 1608037024254,
+        "duration" : 3230
+      }
+    }, {
+      "uid" : "d02f0b4c7bbf7b2d",
+      "status" : "passed",
+      "time" : {
+        "start" : 1607938526723,
+        "stop" : 1607938529939,
+        "duration" : 3216
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "4d1a1e98bbe60ffe.json",
+  "parameterValues" : [ ]
+}
