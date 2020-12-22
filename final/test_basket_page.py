@@ -7,7 +7,7 @@ from .pages.data import UserDate
 import time
 
 
-# @pytest.mark.guest_change_basket
+@pytest.mark.guest_in_basket
 class TestGuestChangeBasketPage:
     @pytest.fixture(scope="function", autouse=True)
     def setup(self, browser):
@@ -15,26 +15,15 @@ class TestGuestChangeBasketPage:
         page.open()
         page.add_to_basket()
 
-    @pytest.mark.xfail
-    def test_guest_can_remove_product_from_basket(self, browser):
+    def test_guest_cant_add_more_product_than_available(self, browser):
         # Act
         basket_page = BasketPage(browser)
         basket_page.open()
-        basket_page.remove_from_basket()
+        basket_page.add_number_of_product_in_basket(ProductTest.PRODUCT_IN_STOCK + 1)
 
         # Assert
-        basket_page.should_not_be_product_in_basket()
-        basket_page.should_be_empty_basket_message()
-
-    def test_guest_can_reduce_number_of_product_in_basket(self, browser):
-        # Act
-        basket_page = BasketPage(browser)
-        basket_page.open()
-        basket_page.reduce_in_basket()
-
-        # Assert
-        basket_page.should_not_be_product_in_basket()
-        basket_page.should_be_empty_basket_message()
+        basket_page.should_be_too_much_product_alert()
+        basket_page.should_not_add_too_much_product()
 
     def test_guest_can_increase_number_of_product_in_basket(self, browser):
         # Act
@@ -47,34 +36,18 @@ class TestGuestChangeBasketPage:
         basket_page.should_be_product_in_basket(ProductTest.PRODUCT_NAME)
         basket_page.check_total_price_product_in_basket(total_price_product)
 
-    def test_guest_cant_add_more_product_than_available(self, browser):
+    def test_guest_can_reduce_number_of_product_in_basket(self, browser):
         # Act
         basket_page = BasketPage(browser)
         basket_page.open()
-        basket_page.add_number_of_product_in_basket(ProductTest.PRODUCT_IN_STOCK + 1)
+        basket_page.reduce_in_basket()
 
         # Assert
-        basket_page.should_not_add_too_much_product()
-#        basket_page.should_be_too_much_product_alert()
-
-
-# @pytest.mark.user_change_basket
-class TestUserChangeBasketPage:
-    @pytest.fixture(scope="function", autouse=True)
-    def setup(self, browser):
-        page = LoginPage(browser)
-        page.open()
-        email = str(time.time()) + "@fakemail.org"
-        print(email)
-        page.register_new_user(email, UserDate.VALID_PASSWORD)
-        page.should_be_authorized_user()
-
-        page = ProductPage(browser)
-        page.open()
-        page.add_to_basket()
+        basket_page.should_not_be_product_in_basket()
+        basket_page.should_be_empty_basket_message()
 
     @pytest.mark.xfail
-    def test_user_can_remove_product_from_basket(self, browser):
+    def test_guest_can_remove_product_from_basket(self, browser):
         # Act
         basket_page = BasketPage(browser)
         basket_page.open()
@@ -84,15 +57,38 @@ class TestUserChangeBasketPage:
         basket_page.should_not_be_product_in_basket()
         basket_page.should_be_empty_basket_message()
 
-    def test_user_can_reduce_number_of_product_in_basket(self, browser):
+    def test_guest_can_see_elements_in_page_header(self, browser):
         # Act
         basket_page = BasketPage(browser)
         basket_page.open()
-        basket_page.reduce_in_basket()
 
         # Assert
-        basket_page.should_not_be_product_in_basket()
-        basket_page.should_be_empty_basket_message()
+        basket_page.should_see_elements_in_header()
+
+
+@pytest.mark.user_in_basket
+class TestUserChangeBasketPage:
+    @pytest.fixture(scope="function", autouse=True)
+    def setup(self, browser):
+        page = LoginPage(browser)
+        page.open()
+        email = str(time.time()) + "@fakemail.org"
+        page.register_new_user(email, UserDate.VALID_PASSWORD)
+        page.should_be_authorized_user()
+
+        page = ProductPage(browser)
+        page.open()
+        page.add_to_basket()
+
+    def test_user_cant_add_more_product_than_available(self, browser):
+        # Act
+        basket_page = BasketPage(browser)
+        basket_page.open()
+        basket_page.add_number_of_product_in_basket(ProductTest.PRODUCT_IN_STOCK + 1)
+
+        # Assert
+        basket_page.should_be_too_much_product_alert()
+        basket_page.should_not_add_too_much_product()
 
     def test_user_can_increase_number_of_product_in_basket(self, browser):
         # Act
@@ -105,12 +101,31 @@ class TestUserChangeBasketPage:
         basket_page.should_be_product_in_basket(ProductTest.PRODUCT_NAME)
         basket_page.check_total_price_product_in_basket(total_price_product)
 
-    def test_user_cant_add_more_product_than_available(self, browser):
+    def test_user_can_reduce_number_of_product_in_basket(self, browser):
         # Act
         basket_page = BasketPage(browser)
         basket_page.open()
-        basket_page.add_number_of_product_in_basket(ProductTest.PRODUCT_IN_STOCK + 1)
+        basket_page.reduce_in_basket()
 
         # Assert
-        basket_page.should_not_add_too_much_product()
-#        basket_page.should_be_too_much_product_alert()
+        basket_page.should_not_be_product_in_basket()
+        basket_page.should_be_empty_basket_message()
+
+    @pytest.mark.xfail
+    def test_user_can_remove_product_from_basket(self, browser):
+        # Act
+        basket_page = BasketPage(browser)
+        basket_page.open()
+        basket_page.remove_from_basket()
+
+        # Assert
+        basket_page.should_not_be_product_in_basket()
+        basket_page.should_be_empty_basket_message()
+
+    def test_user_can_see_elements_in_page_header(self, browser):
+        # Act
+        basket_page = BasketPage(browser)
+        basket_page.open()
+
+        # Assert
+        basket_page.should_see_elements_in_header()

@@ -1,7 +1,7 @@
 class Links():
-    MAIN_PAGE_LINK = "http://selenium1py.pythonanywhere.com/"
-    LOGIN_PAGE_LINK = "http://selenium1py.pythonanywhere.com/accounts/login/"
     BASKET_PAGE_LINK = "http://selenium1py.pythonanywhere.com/basket/"
+    LOGIN_PAGE_LINK = "http://selenium1py.pythonanywhere.com/accounts/login/"
+    MAIN_PAGE_LINK = "http://selenium1py.pythonanywhere.com/"
     PRODUCT_PAGE_LINK = "http://selenium1py.pythonanywhere.com/catalogue/the-girl-who-played-with-non-fire_203/"
 
 
