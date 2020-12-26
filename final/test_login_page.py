@@ -9,7 +9,7 @@ class TestBasketPage:
         page.open()
 
     @pytest.mark.parametrize('wrong_email', ["testtest.tst",
-                                            pytest.param("test@test.tst", marks=pytest.mark.xfail)])
+                                             "test@test@tst"])
     def test_cant_wrong_email_for_login(self, browser, wrong_email):
         # Act
         login_page = LoginPage(browser)
