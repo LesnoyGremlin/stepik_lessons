@@ -19,6 +19,7 @@ class MainPageLocators(CommonLocators):
 
 class LoginPageLocators(CommonLocators):
     LOGIN_FORM = (By.CSS_SELECTOR, "#login_form")
+    LOGIN_EMAIL = (By.CSS_SELECTOR, "#id_login-username")
     REGISTER_BUTTON = (By.CSS_SELECTOR, "button[name='registration_submit']")
     REGISTER_CONFIRM_PASSWORD = (By.CSS_SELECTOR, "input[name='registration-password2']")
     REGISTER_EMAIL = (By.CSS_SELECTOR, "input[name='registration-email']")

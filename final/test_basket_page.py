@@ -57,14 +57,6 @@ class TestGuestChangeBasketPage:
         basket_page.should_not_be_product_in_basket()
         basket_page.should_be_empty_basket_message()
 
-    def test_guest_can_see_elements_in_page_header(self, browser):
-        # Act
-        basket_page = BasketPage(browser)
-        basket_page.open()
-
-        # Assert
-        basket_page.should_see_elements_in_header()
-
 
 @pytest.mark.user_in_basket
 class TestUserChangeBasketPage:
@@ -122,6 +114,7 @@ class TestUserChangeBasketPage:
         basket_page.should_not_be_product_in_basket()
         basket_page.should_be_empty_basket_message()
 
+"""
     def test_user_can_see_elements_in_page_header(self, browser):
         # Act
         basket_page = BasketPage(browser)
@@ -129,3 +122,4 @@ class TestUserChangeBasketPage:
 
         # Assert
         basket_page.should_see_elements_in_header()
+"""
